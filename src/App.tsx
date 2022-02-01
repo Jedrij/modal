@@ -23,7 +23,11 @@ function App() {
       <button onClick={toggleOpen}>Create Report</button>
       {isOpened && (
         <Modal onCancel={toggleOpen} title="Create Report" formId={formId}>
-          <CreateReportForm days={days} formId={formId} />
+          <CreateReportForm
+            days={days}
+            formId={formId}
+            action="https://postman-echo.com/post"
+          />
         </Modal>
       )}
     </section>

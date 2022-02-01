@@ -1,9 +1,9 @@
 .modal {
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  inset: 0px;
   width: 100%;
 }
 
