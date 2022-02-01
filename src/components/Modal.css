@@ -37,7 +37,6 @@
   padding: var(--spacing-small);
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 4fr);
-  /* grid-template-rows: repeat(5, 1fr); */
   column-gap: var(--spacing-small);
   row-gap: var(--spacing-small);
 }
@@ -54,9 +53,9 @@
   height: 1.5rem;
   width: 1.5rem;
 }
-/* .Modal-radio-input[aria-checked] {
+.Modal-radio-input[aria-checked] {
   color: black;
-} */
+}
 
 .Modal-radio-wrap {
   display: grid;
@@ -70,10 +69,6 @@
   grid-template-columns: 30% 10% 30%;
   column-gap: 0.5rem;
   align-items: center;
-}
-
-.Modal-spacing {
-  height: calc(var(--spacing-extra-small) * 2 + 1rem);
 }
 
 .Modal-buttons-wrap {
@@ -94,10 +89,16 @@ p {
 
 input {
   padding: var(--spacing-extra-small);
+  background: white;
+  border-radius: 0;
+  border: thin solid gray;
 }
 
 select {
   padding: var(--spacing-extra-small);
+  background: white;
+  border-radius: 0;
+  border: thin solid gray;
 }
 
 label {

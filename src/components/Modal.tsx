@@ -147,7 +147,7 @@ export function Modal({ action }: ModalProps): ReactElement {
                 </div>
               </>
             ) : (
-              <div className="Modal-spacing" />
+              ""
             )}
           </div>
           <div className="Modal-buttons-wrap">
