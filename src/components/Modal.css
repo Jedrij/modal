@@ -1,17 +1,13 @@
-.Modal-wrap {
+.modal {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100%;
-  --spacing-extra-small: 1rem;
-  --spacing-small: 1.5rem;
-  --spacing-medium: 3rem;
-  --spacing-big: 5rem;
 }
 
-.Modal-container {
+.modal__container {
   height: 33rem;
   width: 50rem;
   z-index: 1;
@@ -22,7 +18,7 @@
   background: white;
 }
 
-.Modal-heading {
+.modal__heading {
   font-size: 1rem;
   font-weight: 400;
   line-height: 150%;
@@ -33,45 +29,11 @@
   padding: var(--spacing-extra-small);
 }
 
-.Modal-form-wrap {
+.modal__children {
   padding: var(--spacing-small);
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 4fr);
-  column-gap: var(--spacing-small);
-  row-gap: var(--spacing-small);
 }
 
-.Modal-radio {
-  display: flex;
-  column-gap: var(--spacing-small);
-  align-items: center;
-}
-
-.Modal-radio-input {
-  margin: 0;
-  border: 0;
-  height: 1.5rem;
-  width: 1.5rem;
-}
-.Modal-radio-input[aria-checked] {
-  color: black;
-}
-
-.Modal-radio-wrap {
-  display: grid;
-  grid-template-columns: auto auto;
-  align-items: center;
-  column-gap: 0.5rem;
-}
-
-.Modal-date-input-wrap {
-  display: grid;
-  grid-template-columns: 30% 10% 30%;
-  column-gap: 0.5rem;
-  align-items: center;
-}
-
-.Modal-buttons-wrap {
+.modal__buttons {
   border-top: thin solid gray;
   position: absolute;
   display: flex;
@@ -83,54 +45,12 @@
   right: 0;
 }
 
-p {
-  margin: 0;
-}
-
-input {
-  padding: var(--spacing-extra-small);
-  background: white;
-  border-radius: 0;
-  border: thin solid gray;
-}
-
-select {
-  padding: var(--spacing-extra-small);
-  background: white;
-  border-radius: 0;
-  border: thin solid gray;
-}
-
-label {
-  text-align: start;
-  line-height: 200%;
-  align-self: center;
-}
-
-button {
-  margin-left: var(--spacing-small);
-  border-radius: 0;
-  width: 10rem;
-  height: 3rem;
-  border: thin solid gray;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-button:first-of-type {
+.modal__btn--cancel {
   background: none;
   color: gray;
 }
 
-button:last-of-type {
+.modal__btn--confirm {
   background: gray;
   color: white;
-}
-
-button:hover {
-  filter: brightness(1.4);
-}
-
-::placeholder {
-  font-size: 1rem;
 }

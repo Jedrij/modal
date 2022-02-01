@@ -1,3 +1,8 @@
+:root {
+  --spacing-extra-small: 1rem;
+  --spacing-small: 1.5rem;
+}
+
 .App {
   text-align: center;
   height: 100vh;
@@ -6,4 +11,47 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+p {
+  margin: 0;
+}
+
+input {
+  padding: var(--spacing-extra-small);
+  background: white;
+  border-radius: 0;
+  border: thin solid gray;
+}
+
+select {
+  padding: var(--spacing-extra-small);
+  background: white;
+  border-radius: 0;
+  border: thin solid gray;
+}
+
+label {
+  text-align: start;
+  line-height: 200%;
+  align-self: center;
+}
+
+button {
+  margin-left: var(--spacing-small);
+  border-radius: 0;
+  width: 10rem;
+  height: 3rem;
+  border: thin solid gray;
+  font-size: 1rem;
+  cursor: pointer;
+  background: darkgray;
+}
+
+button:hover {
+  filter: brightness(1.4);
+}
+
+::placeholder {
+  font-size: 1rem;
 }

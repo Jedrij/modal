@@ -1,0 +1,33 @@
+.create-report-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 4fr);
+  column-gap: var(--spacing-small);
+  row-gap: var(--spacing-small);
+}
+
+.create-report-form__radio {
+  display: flex;
+  column-gap: var(--spacing-small);
+  align-items: center;
+}
+
+.create-report-form__radio-input {
+  margin: 0;
+  border: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.create-report-form__radio-wrap {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.create-report-form__date-input-wrap {
+  display: grid;
+  grid-template-columns: 30% 10% 30%;
+  column-gap: 0.5rem;
+  align-items: center;
+}
