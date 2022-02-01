@@ -4,11 +4,13 @@ import "./CreateReportForm.css";
 export type CreateReportFormProps = {
   days: string[];
   formId: string;
+  action: string;
 };
 
 export function CreateReportForm({
   days,
   formId,
+  action,
 }: CreateReportFormProps): ReactElement {
   const [scheduleChoice, setScheduleChoice] = useState<string>();
   const radioHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -17,7 +19,7 @@ export function CreateReportForm({
   return (
     <form
       className="create-report-form"
-      action="https://postman-echo.com/post"
+      action={action}
       id={formId}
       method="post"
     >
